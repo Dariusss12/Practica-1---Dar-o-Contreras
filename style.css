@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-size: 16px;
     text-align: center;
+    
 }
 
 header {
@@ -14,15 +15,35 @@ header {
     font-family: Verdana;
 }
 
-.data{
-    display: inline-flex;
+h2, h3{
+    font-family: Verdana;
+}
+
+p{
+    font-family: helvetica;
+}
+
+.personal-list{
+    list-style: none; 
+    text-align: left;
+}
+
+.email{
+    font-family: Helvetica;
+    color: #333333;
     
 }
 
+.data{
+    margin: 50px;
+    display: inline-flex;
+    justify-content: center;
+}
+
 .container {
-    max-width: 1200px;
+    width: 350px;
     height: 400px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -84,28 +105,59 @@ td{
     background-color: #ffffff;
 }
 
-
-
-@media (max-width: 1024px) {
-
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
+.links{
+    margin: 15px;
+}
+
+.link{
+    padding: 5px;
+}
+
+@media (max-width: 1280px) {
     .data{
         display: block;
     }
-    .list{
-        display: flex;
-        flex-wrap: nowrap;
+    .container, .content{
+        height: auto;
     }
+
+    .footer{
+        position: relative;
+    }
+
+    .links{
+        padding-top: 15px;
+    }
+    
 }
 
 @media (max-width: 480px) {
+    .container, .content{
+        width: 230px;
+    }
 
 }
 
 @media (max-width: 319) {
+    .container, .content{
+        margin-left: 0;
+    }
 
+    body{
+        overflow-x: auto;
+    }
 }
   
   
